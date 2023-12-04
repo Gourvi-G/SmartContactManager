@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org" th:replace="base::Layout(~{::section})">
+<head>
+<meta charset="ISO-8859-1">
+<title>ABOUT PAGE</title>
+</head>
+<body>
+  <section>
+	  <div class="conatiner">
+		  <<div class="row">
+			  <div class="col-md-8 offset-md-2">
+				 
+				  <div class="my-card">
+					   <h1 class="text-center">Register Here</h1>
+					   <form th:action="@{/do_register}" method="post">
+						   
+						   <div class="form-group">
+                           <label for="name-field">Your Name</label>
+                           <input type="text" 
+                           class="form-control" 
+                           id="name-field" 
+                           aria-describedby="emailHelp" 
+                           placeholder="Enter Your Name"
+                           required/>
+                           </div>
+						   
+						   <div class="form-group">
+                           <label for="exampleInputEmail1">Email address</label>
+                           <input type="email" 
+                           class="form-control" 
+                           id="exampleInputEmail1" 
+                           aria-describedby="emailHelp" 
+                           placeholder="Enter email">
+                           </div>
+						   
+						   
+						    <div class="form-group">
+                            <label for="exampleInputPassword1">Password</label>
+                            <input type="password" 
+                            class="form-control" 
+                            id="exampleInputPassword1" 
+                            placeholder="Password">
+                            </div>
+						   
+						   <!--User about field-->
+						   <div class="conatiner form-group">
+							   <textarea placeholder="Enter somthing yourself" id="" rows="5" class="form-control"></textarea>
+						   
+						   </div>
+						   
+						   <div class="container text-center">
+							   <button type="submit" class="custom-button">Submit</button>
+							   <button type="reset" class="custom-button">Reset</button>
+						   </div>
+						   
+					   </form>
+				  </div>
+			  </div>
+		  </div>
+	  </div>
+	  
+  </section>
+</body>
+</html>
